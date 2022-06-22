@@ -13,5 +13,10 @@
       "source-map-support": "^0.5.16",
       "tslint": "^6.0.0",
       "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "tsc && node --unhandled-rejections=strict ./dist/app.js",
+    "debug": "export DEBUG=* && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
